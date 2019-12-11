@@ -1,0 +1,28 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "advent of code daily problems will be done here",
+  "main": "advent-code-day-1.js",
+  "scripts": {
+    "test": "test",
+    "fix:other": "npm prettier --write",
+    "fix:js": "npm test:js --fix",
+    "fix": "npm fix:js && npm fix:other",
+    "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
+    "test:other": "npm prettier --list-different",
+    "test:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
+    "test": "npm test:other && npm test:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "advent of code"
+  },
+  "author": "E",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
